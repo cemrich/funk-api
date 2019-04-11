@@ -186,8 +186,19 @@ curl "https://api.nexx.cloud/v3/741/videos/byid/1369342" -H "x-request-cid: 3154
 
 ## Get URL from video metadata
 
+### Streams
+
 ```
 https://funk-01.akamaized.net/a7f51520-c20f-4d3a-960a-0aca422b81aa/1369342_src.ism/Manifest
 
 => https://[result.streamdata.cdnShieldHTTPS]/[result.streamdata.azureLocator]/[videoEntityId]_src.ism/Manifest
+```
+
+### Static files
+
+```
+http://funk-01dd.akamaized.net/a7f51520-c20f-4d3a-960a-0aca422b81aa/1369342_src_320x180_400.mp4
+http://funk-01dd.akamaized.net/a7f51520-c20f-4d3a-960a-0aca422b81aa/1369342_src_1920x1080_6000.mp4
+
+=> https://[result.streamdata.cdnShieldProgHTTP]/[result.streamdata.azureLocator]/[videoEntityId]_src_[result.streamdata.azureFileDistribution].mp4
 ```
