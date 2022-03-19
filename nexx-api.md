@@ -1,7 +1,5 @@
 ## Init session
 
-A device id is necessary to initialize a session. A device id is specified as `<unix_timestamp>:<random_number>`. The random number has to be in [10000:99999]. For instance, `1647698623:45213` is a valid device id.
-
 ```
 curl "https://api.nexx.cloud/v3/741/session/init" --data "nxp_devh=1647698623"%"3A45213"
 ```
